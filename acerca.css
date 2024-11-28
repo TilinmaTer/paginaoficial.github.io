@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #7590c3; /* Color principal del texto */
+    background-color: #657996; /* Fondo gris azulado */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; /* Espaciado más amplio para mejor separación */
+    background: linear-gradient(to bottom, #c3c8d6, #99a540); /* De gris suave a azul */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fijar el encabezado */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Texto blanco */
+    text-transform: uppercase; /* Estilo en mayúsculas */
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000; /* Texto blanco */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffc857; /* Amarillo al pasar el cursor */
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 20px; /* Ajuste para compensar el header fijo */
+    background-color: #86a6b6; /* Fondo azul claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Hacer responsivo */
+    max-width: 1200px;
+    width: 90%;
+    gap: 20px;
+    align-items: center; /* Alineación vertical */
+}
+
+.about-text {
+    flex: 1; /* Ocupa el 50% del espacio */
+    color: #243342; /* Color del texto */
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1; /* Ocupa el otro 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 90%; /* Reduce un poco el tamaño */
+    height: auto;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar la imagen */
+}
+
+/* Start Section */
+.start-section {
+    text-align: center;
+    background-image: url("img/Imagen\ de\ WhatsApp\ 2024-10-21\ a\ las\ 09.40.34_2da037e1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #d6ce74;
+    padding: 150px 20px; /* Menos padding horizontal para evitar cortes en pantallas pequeñas */
+}
+
+.start-section h2 {
+    font-size: 2.5em;
+    color: #c6bd61; /* Amarillo pastel */
+    margin-bottom: 20px;
+}
+
+.start-section .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #002855; /* Texto azul oscuro */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.start-section .btn:hover {
+    background-color: #ffc857; /* Amarillo más fuerte */
+    color: #002855;
+}
+
+/* Footer */
+.footer {
+    background-color: #002855; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Adaptable a pantallas pequeñas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 15px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+    }
+
+    .header {
+        flex-direction: column; /* Cambia el header a una columna */
+        text-align: center;
+    }
+
+    .nav a {
+        margin: 5px 0;
+    }
+
+    .start-section {
+        padding: 100px 10px; /* Reducir padding en móviles */
+    }
+
+    .start-section h2 {
+        font-size: 2em;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Apilar elementos del footer */
+        text-align: center;
+    }
+}

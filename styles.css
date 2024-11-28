@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero {
+    background-image: url('https://wallpapercave.com/wp/wp1824970.jpg'); background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Sección de tarjetas */
+.highlights {
+    padding: 50px;
+    background-color: #1c2a44;
+    color: #fff;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #2e3b55;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #c0c0c0;
+}
+
+/* Sección de contacto */
+.contact-info {
+    background-color: #6c8291;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+}
